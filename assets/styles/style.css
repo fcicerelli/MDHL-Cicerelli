@@ -70,7 +70,9 @@ aside {
 
 main {
     display: inline-block;
+    display: flex;
     width: 70%;
+    margin: 20px auto;
 }
 
 .title--all {
@@ -80,10 +82,76 @@ main {
 
 p {
     text-indent: 25px;
+    margin: 10px;
+    text-align: justify;
+}
+
+.photos {
+    width: 150px;
+}
+
+.photos img {
+    width: 100%;
+}
+
+.lists {
+    list-style-position: inside;
+    text-align: justify;
+}
+
+.finger {
+    list-style-type: "\1F449";
+}
+
+.numbers {
+    list-style: decimal;
+}
+
+.letters {
+    text-indent: 25px;
+    list-style-type: lower-alpha;
+}
+
+.circle {
+    list-style: circle;
+    list-style-position: inside;
+    margin-left: 80px;
+}
+
+li {
+    text-indent: 25px;
+}
+
+dl {
+    margin: 10px;
+}
+
+dt {
+    font-weight: bolder;
+}
+
+dd {
+    text-indent: 25px;
 }
 
 table {
     margin: 20px auto;
+    width: 80vh;
+}
+
+thead,
+tbody,
+tfoot {
+    margin: 5px;
+}
+
+td {
+    border: 1px solid lightslategray;
+    text-align: center;
+}
+
+td:hover {
+    background-color: #D6EAF8;
 }
 
 footer {
