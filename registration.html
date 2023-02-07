@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="shortcut icon" href="./assets/ico/favicon.ico" type="image/x-icon">
     <title>Registration | MDHL</title>
 </head>
 
@@ -25,12 +27,137 @@
             <img id="banner" src="./assets/design1_image2.jpg" alt="Hockey player">
         </section>
     </header>
-    <div>
-        <form action="show_data.html" method="get">
+    <article class="title--all">
+        <h2>Registration Form</h2>
+    </article>
+    <div class="organizer">
+        <aside class="left">
+            <img id="logo" src="./assets/Logo_Mighty_ducks-01.png" alt="">
+        </aside>
+        <main class="center column">
+            <form action="show_data.html" method="get">
+                <fieldset>
+                    <label for="first-name">Player's First Name:</label>
+                    <input type="text" name="first-name" id="first-name" placeholder="John Paul" class="Fields">
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" name="last-name" id="last-name" placeholder="Smith" class="Fields">
+                    <label for="street-address">Street Address:</label>
+                    <input type="text" name="street-address" id="street-address" placeholder="478 Main Street"
+                        class="Fields">
+                    <label for="city">City:</label>
+                    <input type="text" name="city" id="city" placeholder="Baltimore" class="Fields">
+                    <label for="zip-code">Zip Code:</label>
+                    <input type="text" name="zip-code" id="zip-code" placeholder="40202" class="Fields">
+                    <label for="birth-date">Birth Date(mm/dd/yyyy):</label>
+                    <input type="date" name="birth-date" id="birth-date">
 
-            <button type="submit">send</button>
-        </form>
+                    <label for="">Gender:</label>
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="female" value="female">
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="male" value="male">
+
+                    <label for="">Grade:</label>
+                    <label for="pre">Pre-School</label>
+                    <input type="radio" name="grade" id="pre" value="Pre-School">
+                    <label for="1">1st</label>
+                    <input type="radio" name="grade" id="1" value="1st">
+                    <label for="2">2nd</label>
+                    <input type="radio" name="grade" id="2" value="2nd">
+                    <label for="3">3rd</label>
+                    <input type="radio" name="grade" id="3" value="3rd">
+                    <label for="4">4th</label>
+                    <input type="radio" name="grade" id="4" value="4th">
+                    <label for="5">5th</label>
+                    <input type="radio" name="grade" id="5" value="5th">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Which elementary school do you live near?</legend>
+                    <label for="closest-school">Closest School:</label>
+                    <select name="closest-school" id="closest-school">
+                        <option value="AJ_Katzenmaier">AJ Katzenmaier</option>
+                        <option value="Greenbay">Greenbay</option>
+                        <option value="Howard_A_Yeager">Howard_A_Yeager</option>
+                        <option value="Marjorie_P_Hart">Marjorie P Hart</option>
+                        <option value="North_elementary">North elementary</option>
+                        <option value="South_Elementary">South Elementary</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>What position(s) do you normally play? (check all that apply)</legend>
+                    <label for="forward">Forward</label>
+                    <input type="checkbox" name="position" id="forward" value="Forward">
+                    <label for="midfield">Midfield</label>
+                    <input type="checkbox" name="position" id="midfield" value="Midfield">
+                    <label for="defense">Defense</label>
+                    <input type="checkbox" name="position" id="defense" value="Defense">
+                    <label for="goalkeeper">Goalkeeper</label>
+                    <input type="checkbox" name="position" id="goalkeeper" value="Goalkeeper">
+                </fieldset>
+                <fieldset>
+                    <legend>Uniform size:</legend>
+                    <select name="uniform-size" id="uniform-size">
+                        <option value="">--select one--</option>
+                        <option value="Youth Small">Youth Small</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Youth Medium">Youth Medium</option>
+                        <option value="Large">Large</option>
+                        <option value="Youth Large">Youth Large</option>
+                        <option value="Extra Large">Extra Large</option>
+                        <option value="Small">Small</option>
+                    </select>
+                </fieldset>
+
+                <h4>Permission to Play</h4>
+                <p>I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all
+                    the rules of the Mighty Ducks Hockey League (MDHL). In recognizing the possibility of physical
+                    injury associated with hockey and in consideration for the "League" accepting the registrant for its
+                    hockey programs and activities, I hereby release, discharge, and/or otherwise indemnify MDHL, their
+                    employees and associated personnel and volunteers, including the facilities used for practices and
+                    games, against any claim by or on behalf of the registrant as a result of the registrant's
+                    participation in the program and/or being transported to or from MDHL sponsored activities, which
+                    transportation</p>
+                <p>By signing below, I here by agree and authorize the above. In addition, by signing below, also
+                    acknowledge that I have read the cancellation policy and agree to its terms.</p>
+                <fieldset>
+                    <label for="signature">Parent/guard signature:</label>
+                    <input type="text" name="signature" id="" required>
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date">
+                </fieldset>
+                <button type="reset">reset</button>
+                <button type="submit">send</button>
+            </form>
+        </main>
+        <section class="right">
+            <h4 class="gallery-title">Gallery</h4>
+            <div class="photos">
+                <img src="./assets/hockey_1.jpg" alt="hockey player">
+            </div>
+            <div class="photos">
+                <img src="./assets/hockey_2.jpg" alt="hockey player">
+            </div>
+            <div class="photos">
+                <img src="./assets/hockey_3.jpg" alt="two hockey players">
+            </div>
+            <div class="photos">
+                <img src="./assets/design1_image1.jpg" alt="two payers and a referee">
+            </div>
+        </section>
     </div>
+    <footer>
+        <p>This page was made with Fabio Cicerelli</p>
+        <div class="social-media">
+            <a href="mailto:fabiocicerelli@hotmail.com"><i class="fa fa-envelope"></i></a>
+            <a href="https://wa.me/5401144226666"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://wa.me/5401144226666"><i class="fab fa-github"></i></a>
+            <a href="https://www.facebook.com/fabiocicerelli"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/fabiocicerelli"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/fabiocicerelli"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/fabio-cicerelli/"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
 </body>
 
 </html>
