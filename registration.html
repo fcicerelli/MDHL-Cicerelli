@@ -15,15 +15,6 @@
     <header>
         <section class="section--index">
             <h1>Mighty Ducks Hockey League</h1>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="game_info.html">Game Info</a>
-                <a href="rules.html">Rules</a>
-                <a href="#" class="active-links">Registration</a>
-                <a href="show_data.html">Show Data</a>
-                <a href="about.html">About MDHL</a>
-                <a href="contact.html">contact</a>
-            </nav>
             <img id="banner" src="./assets/design1_image2.jpg" alt="Hockey player">
         </section>
     </header>
@@ -33,45 +24,67 @@
     <div class="organizer">
         <aside class="left">
             <img id="logo" src="./assets/Logo_Mighty_ducks-01.png" alt="">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="game_info.html">Game Info</a>
+                <a href="rules.html">Rules</a>
+                <a href="#" class="active-links">Registration</a>
+                <a href="show_data.html">Show Data</a>
+                <a href="about.html">About MDHL</a>
+                <a href="contact.html">contact</a>
+            </nav>
         </aside>
         <main class="center column">
             <form action="show_data.html" method="get">
                 <fieldset>
-                    <label for="first-name">Player's First Name:</label>
-                    <input type="text" name="first-name" id="first-name" placeholder="John Paul" class="Fields">
-                    <label for="last-name">Last Name:</label>
-                    <input type="text" name="last-name" id="last-name" placeholder="Smith" class="Fields">
-                    <label for="street-address">Street Address:</label>
-                    <input type="text" name="street-address" id="street-address" placeholder="478 Main Street"
-                        class="Fields">
-                    <label for="city">City:</label>
-                    <input type="text" name="city" id="city" placeholder="Baltimore" class="Fields">
-                    <label for="zip-code">Zip Code:</label>
-                    <input type="text" name="zip-code" id="zip-code" placeholder="40202" class="Fields">
-                    <label for="birth-date">Birth Date(mm/dd/yyyy):</label>
-                    <input type="date" name="birth-date" id="birth-date">
-
-                    <label for="">Gender:</label>
-                    <label for="female">Female</label>
-                    <input type="radio" name="gender" id="female" value="female">
-                    <label for="male">Male</label>
-                    <input type="radio" name="gender" id="male" value="male">
-
-                    <label for="">Grade:</label>
-                    <label for="pre">Pre-School</label>
-                    <input type="radio" name="grade" id="pre" value="Pre-School">
-                    <label for="1">1st</label>
-                    <input type="radio" name="grade" id="1" value="1st">
-                    <label for="2">2nd</label>
-                    <input type="radio" name="grade" id="2" value="2nd">
-                    <label for="3">3rd</label>
-                    <input type="radio" name="grade" id="3" value="3rd">
-                    <label for="4">4th</label>
-                    <input type="radio" name="grade" id="4" value="4th">
-                    <label for="5">5th</label>
-                    <input type="radio" name="grade" id="5" value="5th">
+                    <div class="pair">
+                        <label for="first-name">Player's First Name:</label>
+                        <input type="text" name="first-name" id="first-name" placeholder="John Paul" class="Fields">
+                    </div>
+                    <div class="pair">
+                        <label for="last-name">Last Name:</label>
+                        <input type="text" name="last-name" id="last-name" placeholder="Smith" class="Fields">
+                    </div>
+                    <div class="pair">
+                        <label for="street-address">Street Address:</label>
+                        <input type="text" name="street-address" id="street-address" placeholder="478 Main Street"
+                            class="Fields">
+                    </div>
+                    <div class="pair">
+                        <label for="city">City:</label>
+                        <input type="text" name="city" id="city" placeholder="Baltimore" class="Fields">
+                    </div>
+                    <div class="pair">
+                        <label for="zip-code">Zip Code:</label>
+                        <input type="text" name="zip-code" id="zip-code" placeholder="40202" class="Fields">
+                    </div>
+                    <div class="pair">
+                        <label for="birth-date">Birth Date(mm/dd/yyyy):</label>
+                        <input type="date" name="birth-date" id="birth-date">
+                    </div>
+                    <div class="pair">
+                        <label for="">Gender:</label>
+                        <label for="female">Female</label>
+                        <input type="radio" name="gender" id="female" value="female">
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="male" value="male">
+                    </div>
+                    <div class="pair">
+                        <label for="">Grade:</label>
+                        <label for="pre">Pre-School</label>
+                        <input type="radio" name="grade" id="pre" value="Pre-School">
+                        <label for="1">1st</label>
+                        <input type="radio" name="grade" id="1" value="1st">
+                        <label for="2">2nd</label>
+                        <input type="radio" name="grade" id="2" value="2nd">
+                        <label for="3">3rd</label>
+                        <input type="radio" name="grade" id="3" value="3rd">
+                        <label for="4">4th</label>
+                        <input type="radio" name="grade" id="4" value="4th">
+                        <label for="5">5th</label>
+                        <input type="radio" name="grade" id="5" value="5th">
+                    </div>
                 </fieldset>
-
                 <fieldset>
                     <legend>Which elementary school do you live near?</legend>
                     <label for="closest-school">Closest School:</label>
@@ -121,13 +134,19 @@
                 <p>By signing below, I here by agree and authorize the above. In addition, by signing below, also
                     acknowledge that I have read the cancellation policy and agree to its terms.</p>
                 <fieldset>
-                    <label for="signature">Parent/guard signature:</label>
-                    <input type="text" name="signature" id="" required>
-                    <label for="date">Date:</label>
-                    <input type="date" id="date" name="date">
+                    <div class="pair">
+                        <label for="signature">Parent/guard signature:</label>
+                        <input type="text" name="signature" id="" required>
+                    </div>
+                    <div class="pair">
+                        <label for="date">Date:</label>
+                        <input type="date" id="date" name="date">
+                    </div>
                 </fieldset>
-                <button type="reset">reset</button>
-                <button type="submit">send</button>
+                <div class="pair">
+                    <button type="reset">reset</button>
+                    <button type="submit">send</button>
+                </div>
             </form>
         </main>
         <section class="right">
